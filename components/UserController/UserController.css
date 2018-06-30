@@ -1,0 +1,14 @@
+/* #user-list {
+  width: 45%;
+  display: inline-block;
+}
+
+#user-card {
+  width: 45%;
+  display: inline-block;
+} */
+
+#user-controller-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
