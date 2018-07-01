@@ -9,7 +9,7 @@ export default class UserCard extends HTMLElement {
     const rawTemplate = `
       <template id="user-card-template">
         <link rel="stylesheet" href="/components/UserCard/UserCard.css">
-        <div class="card__user-card-container">
+        <div class="user-card__container">
           <h2 class="card__name">
             <span class="card__full-name"></span>
             <span class="card__user-name"></span>
@@ -19,7 +19,7 @@ export default class UserCard extends HTMLElement {
           </p>
           <button class="card__details-btn">More Details</button>
           <div class="card__hidden-content">
-            <p class="card__address"></p>
+            <p class="user-card__address"></p>
           </div>
         </div>
       </template>
@@ -30,7 +30,7 @@ export default class UserCard extends HTMLElement {
   }
 
   /**
-   * lifecycle hook that's fired when a web component is inserted into the DOM.
+   * life cycle hook that's fired when a web component is inserted into the DOM.
    * This is similar to componentWillMount / componentDidMount
    *
    * @memberof UserCard
@@ -80,7 +80,7 @@ export default class UserCard extends HTMLElement {
       userData.username;
     this.shadowRoot.querySelector(".card__website").innerHTML =
       userData.website;
-    this.shadowRoot.querySelector(".card__address").innerHTML = `
+    this.shadowRoot.querySelector(".user-card__address").innerHTML = `
         <h4>Address</h4>
         ${userData.address.suite}, <br/>
         ${userData.address.street}, <br/>

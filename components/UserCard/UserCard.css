@@ -1,4 +1,4 @@
-.card__user-card-container {
+.user-card__container {
   text-align: center;
   border-radius: 5px;
   border: 1px solid gray;
@@ -6,7 +6,7 @@
   margin: 3px;
 }
 
-.card__user-card-container:hover {
+.user-card__container:hover {
   box-shadow: 3px 3px 3px;
 }
 

@@ -1,0 +1,11 @@
+.declarative-user-card__container {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-family: "Courier New", Courier, monospace;
+  margin: 3px;
+}
+
+.declarative-user-card__container:hover {
+  box-shadow: 3px 3px 3px;
+}

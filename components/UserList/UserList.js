@@ -1,8 +1,4 @@
 export default class UserList extends HTMLElement {
-  constructor() {
-    super();
-  }
-
   static buildTemplate() {
     const rawTemplate = `
     <template id="user-list-template">
